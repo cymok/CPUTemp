@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="@string/pref_key_enable_ct"
+        android:summary="@string/pref_summary_enable_ct"
+        android:title="@string/pref_title_enable_ct" />
+
+    <PreferenceCategory
+        android:key="@string/pref_cat_key_general"
+        android:title="@string/pref_cat_title_general">
+
+        <EditTextPreference
+            android:defaultValue="@string/pref_default_temp_file"
+            android:dialogTitle="@string/pref_dialog_title_temp_file"
+            android:inputType="text"
+            android:key="@string/pref_key_temp_file"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/pref_summary_temp_file"
+            android:title="@string/pref_title_temp_file" />
+
+        <EditTextPreference
+            android:defaultValue="@string/pref_default_update_interval"
+            android:dialogTitle="@string/pref_dialog_title_update_interval"
+            android:inputType="number"
+            android:key="@string/pref_key_update_interval"
+            android:numeric="integer"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/pref_summary_update_interval"
+            android:title="@string/pref_title_update_interval" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="@string/pref_cat_key_appearance"
+        android:title="@string/pref_cat_title_appearance">
+
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="@string/pref_dialog_title_position"
+            android:entries="@array/pref_entries_position"
+            android:entryValues="@array/pref_values_position"
+            android:key="@string/pref_key_position"
+            android:summary="@string/pref_summary_position"
+            android:title="@string/pref_title_position" />
+
+        <EditTextPreference
+            android:defaultValue="@string/pref_default_left_margin"
+            android:dialogTitle="@string/pref_dialog_title_left_margin"
+            android:inputType="number"
+            android:key="@string/pref_key_left_margin"
+            android:numeric="integer"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/pref_summary_left_margin"
+            android:title="@string/pref_title_left_margin" />
+
+        <EditTextPreference
+            android:defaultValue="@string/pref_default_right_margin"
+            android:dialogTitle="@string/pref_dialog_title_right_margin"
+            android:inputType="number"
+            android:key="@string/pref_key_right_margin"
+            android:numeric="integer"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/pref_summary_right_margin"
+            android:title="@string/pref_title_right_margin" />
+
+        <EditTextPreference
+            android:defaultValue="@string/pref_default_font_size"
+            android:dialogTitle="@string/pref_dialog_title_font_size"
+            android:inputType="number"
+            android:key="@string/pref_key_font_size"
+            android:numeric="integer"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/pref_summary_font_size"
+            android:title="@string/pref_title_font_size" />
+
+        <com.pavelsikun.vintagechroma.ChromaPreference
+            android:key="@string/pref_key_font_color"
+            android:title="@string/pref_title_font_color"
+            app:chromaColorMode="ARGB"
+            app:chromaIndicatorMode="HEX"
+            app:chromaInitialColor="@color/default_font_color" />
+
+        <EditTextPreference
+            android:defaultValue="@string/pref_default_format_string"
+            android:dialogTitle="@string/pref_dialog_title_format_string"
+            android:inputType="text"
+            android:key="@string/pref_key_format_string"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/pref_summary_format_string"
+            android:title="@string/pref_title_format_string" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="@string/pref_cat_key_limit_colors"
+        android:title="@string/pref_cat_title_limit_colors">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key_enable_limit"
+            android:summary="@string/pref_summary_enable_limit"
+            android:title="@string/pref_title_enable_limit" />
+
+        <EditTextPreference
+            android:defaultValue="@string/pref_default_upper_limit"
+            android:dialogTitle="@string/pref_dialog_title_upper_limit"
+            android:inputType="numberDecimal"
+            android:key="@string/pref_key_upper_limit"
+            android:numeric="decimal"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_upper_limit" />
+
+        <EditTextPreference
+            android:defaultValue="@string/pref_default_lower_limit"
+            android:dialogTitle="@string/pref_dialog_title_lower_limit"
+            android:inputType="numberDecimal"
+            android:key="@string/pref_key_lower_limit"
+            android:numeric="decimal"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_lower_limit" />
+
+        <com.pavelsikun.vintagechroma.ChromaPreference
+            android:key="@string/pref_key_upper_limit_font_color"
+            android:title="@string/pref_title_upper_limit_font_color"
+            app:chromaColorMode="ARGB"
+            app:chromaIndicatorMode="HEX"
+            app:chromaInitialColor="@color/default_upper_limit_font_color" />
+
+        <com.pavelsikun.vintagechroma.ChromaPreference
+            android:key="@string/pref_key_lower_limit_font_color"
+            android:title="@string/pref_title_lower_limit_font_color"
+            app:chromaColorMode="ARGB"
+            app:chromaIndicatorMode="HEX"
+            app:chromaInitialColor="@color/default_lower_limit_font_color" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="@string/pref_cat_key_dark_colors"
+        android:title="@string/pref_cat_title_dark_colors">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="@string/pref_key_enable_dark"
+            android:summary="@string/pref_summary_enable_dark"
+            android:title="@string/pref_title_enable_dark" />
+
+        <com.pavelsikun.vintagechroma.ChromaPreference
+            android:key="@string/pref_key_dark_font_color"
+            android:title="@string/pref_title_dark_font_color"
+            app:chromaColorMode="ARGB"
+            app:chromaIndicatorMode="HEX"
+            app:chromaInitialColor="@color/default_dark_font_color" />
+
+        <com.pavelsikun.vintagechroma.ChromaPreference
+            android:key="@string/pref_key_upper_limit_dark_font_color"
+            android:title="@string/pref_title_upper_limit_dark_font_color"
+            app:chromaColorMode="ARGB"
+            app:chromaIndicatorMode="HEX"
+            app:chromaInitialColor="@color/default_upper_limit_dark_font_color" />
+
+        <com.pavelsikun.vintagechroma.ChromaPreference
+            android:key="@string/pref_key_lower_limit_dark_font_color"
+            android:title="@string/pref_title_lower_limit_dark_font_color"
+            app:chromaColorMode="ARGB"
+            app:chromaIndicatorMode="HEX"
+            app:chromaInitialColor="@color/default_lower_limit_dark_font_color" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="@string/pref_cat_key_advanced"
+        android:title="@string/pref_cat_title_advanced">
+
+        <EditTextPreference
+            android:defaultValue="@string/pref_default_divisor"
+            android:dialogTitle="@string/pref_dialog_title_divisor"
+            android:inputType="numberDecimal"
+            android:key="@string/pref_key_divisor"
+            android:numeric="decimal"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/pref_summary_divisor"
+            android:title="@string/pref_title_divisor" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key_use_fahrenheit"
+            android:summary="@string/pref_summary_use_fahrenheit"
+            android:title="@string/pref_title_use_fahrenheit" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key_use_root"
+            android:summary="@string/pref_summary_use_root"
+            android:title="@string/pref_title_use_root" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

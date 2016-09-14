@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_green">#4caf50</color>
+    <color name="color_green_dark">#388e3c</color>
+
+    <color name="default_font_color">#ffffff</color>
+    <color name="default_dark_font_color">#99000000</color>
+
+    <color name="default_upper_limit_font_color">#f44336</color>
+    <color name="default_lower_limit_font_color">#03a9f4</color>
+
+    <color name="default_upper_limit_dark_font_color">#d32f2f</color>
+    <color name="default_lower_limit_dark_font_color">#1976d2</color>
+
+</resources>

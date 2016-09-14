@@ -1,0 +1,44 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.narcotek.cputemp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".app.ui.TempPrefActivity">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+
+        </activity>
+
+        <receiver android:name=".app.helper.PrefReqReceiver">
+
+            <intent-filter>
+
+                <action android:name="INTENT_CPUTEMP_REQ_PREF"/>
+
+            </intent-filter>
+
+        </receiver>
+
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="A module which adds the CPU temperature to the status bar" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="82" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,15 @@
+# Gradle
+.gradle
+build/
+
+# IntelliJ
+*.iml
+.idea/
+
+# Generated
+/*/build
+*.apk
+
+# Local
+local.properties
+

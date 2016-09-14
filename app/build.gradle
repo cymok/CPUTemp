@@ -1,0 +1,28 @@
+apply plugin: "com.android.application"
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "org.narcotek.cputemp"
+
+        minSdkVersion 21
+        targetSdkVersion 24
+
+        versionCode 9
+        versionName "1.6.2"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
+    }
+}
+
+dependencies {
+    provided "de.robv.android.xposed:api:82"
+    compile "com.pavelsikun:vintage-chroma:1.5"
+}

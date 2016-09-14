@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General -->
+    <string name="app_name">CPUTemp</string>
+
+    <!-- Menus -->
+    <string name="menu_info_item_about">About</string>
+    <string name="menu_info_item_licenses">Licenses</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_about_label_header">About CPUTemp</string>
+
+    <string name="dialog_about_label_version">CPUTemp v1.6.2 © 2016 narcotek</string>
+
+    <string name="dialog_about_label_source">Source code</string>
+    <string name="dialog_about_link_source">https://gitlab.com/narcotek/CPUTemp/</string>
+
+    <string name="dialog_about_label_narcotek">Dev page</string>
+    <string name="dialog_about_link_narcotek">http://narcotek.org/</string>
+
+    <string name="dialog_about_label_libraries">Used libraries</string>
+
+    <string name="dialog_about_label_vintagechroma">VintageChroma by MrBIMC</string>
+    <string name="dialog_about_link_vintagechroma">https://github.com/MrBIMC/VintageChroma/</string>
+
+    <string name="dialog_about_label_xposed">XposedBridge by rovo89, Tungstwenty</string>
+    <string name="dialog_about_link_xposed">https://github.com/rovo89/XposedBridge/</string>
+
+    <string name="dialog_btn_okay">Okay</string>
+
+    <!-- Preferences -->
+    <string name="pref_cat_key_general">pref_cat_general</string>
+    <string name="pref_cat_title_general">General</string>
+
+    <string name="pref_cat_key_appearance">pref_cat_appearance</string>
+    <string name="pref_cat_title_appearance">Basic appearance</string>
+
+    <string name="pref_cat_key_limit_colors">pref_cat_limit_colors</string>
+    <string name="pref_cat_title_limit_colors">Temperature dependent colors</string>
+
+    <string name="pref_cat_key_dark_colors">pref_cat_dark_colors</string>
+    <string name="pref_cat_title_dark_colors">Contrasting colors (Android 6.0+)</string>
+
+    <string name="pref_cat_key_advanced">pref_cat_advanced</string>
+    <string name="pref_cat_title_advanced">Advanced</string>
+
+    <string name="pref_key_enable_ct">enable_ct</string>
+    <string name="pref_title_enable_ct">Enable CPUTemp</string>
+    <string name="pref_summary_enable_ct">Enable or disable CPUTemp</string>
+
+    <string name="pref_key_temp_file">temp_file</string>
+    <string name="pref_default_temp_file">/sys/class/thermal/thermal_zone0/temp</string>
+    <string name="pref_title_temp_file">Temperature file path</string>
+    <string name="pref_summary_temp_file">Path to the temperature file</string>
+    <string name="pref_dialog_title_temp_file">Enter the file path</string>
+
+    <string name="pref_key_update_interval">update_interval</string>
+    <string name="pref_default_update_interval">1000</string>
+    <string name="pref_title_update_interval">Update interval</string>
+    <string name="pref_summary_update_interval">Update interval for reading the file in ms</string>
+    <string name="pref_dialog_title_update_interval">Default: 1000</string>
+
+    <string name="pref_key_position">position</string>
+    <string name="pref_title_position">Position</string>
+    <string name="pref_summary_position">The label\'s position in the status bar</string>
+    <string name="pref_dialog_title_position">Select position</string>
+
+    <string name="pref_key_left_margin">left_margin</string>
+    <string name="pref_default_left_margin">6</string>
+    <string name="pref_title_left_margin">Left margin</string>
+    <string name="pref_summary_left_margin">Left margin of the label</string>
+    <string name="pref_dialog_title_left_margin">Default: 6</string>
+
+    <string name="pref_key_right_margin">right_margin</string>
+    <string name="pref_default_right_margin">0</string>
+    <string name="pref_title_right_margin">Right margin</string>
+    <string name="pref_summary_right_margin">Right margin of the label</string>
+    <string name="pref_dialog_title_right_margin">Default: 0</string>
+
+    <string name="pref_key_font_size">font_size</string>
+    <string name="pref_default_font_size">12</string>
+    <string name="pref_title_font_size">Font size</string>
+    <string name="pref_summary_font_size">Font size of the label</string>
+    <string name="pref_dialog_title_font_size">Default: 12</string>
+
+    <string name="pref_key_font_color">font_color</string>
+    <string name="pref_title_font_color">Font color</string>
+
+    <string name="pref_key_format_string">format_string</string>
+    <string name="pref_default_format_string" formatted="false">%T%U</string>
+    <string name="pref_title_format_string">Format string</string>
+    <string name="pref_dialog_title_format_string" formatted="false">Default: %T%U</string>
+    <string name="pref_summary_format_string" formatted="false">E. g.: \'(%2T %U)\' results in \'(38,20 °C)\'</string>
+
+    <string name="pref_key_enable_limit">enable_limit</string>
+    <string name="pref_title_enable_limit">Enable temperature dependent font color</string>
+    <string name="pref_summary_enable_limit">The label\'s font color changes when the temperature passes one of the two thresholds</string>
+
+    <string name="pref_key_upper_limit">upper_limit</string>
+    <string name="pref_default_upper_limit">70.0</string>
+    <string name="pref_title_upper_limit">Upper threshold</string>
+    <string name="pref_dialog_title_upper_limit">Default: 70.0</string>
+
+    <string name="pref_key_upper_limit_font_color">upper_limit_font_color</string>
+    <string name="pref_title_upper_limit_font_color">Upper treshhold font color</string>
+
+    <string name="pref_key_lower_limit">lower_limit</string>
+    <string name="pref_default_lower_limit">0.0</string>
+    <string name="pref_title_lower_limit">Lower threshold</string>
+    <string name="pref_dialog_title_lower_limit">Default: 0.0</string>
+
+    <string name="pref_key_lower_limit_font_color">lower_limit_font_color</string>
+    <string name="pref_title_lower_limit_font_color">Lower threshold font color</string>
+
+    <string name="pref_key_enable_dark">enable_dark</string>
+    <string name="pref_title_enable_dark">Enable contrasting colors</string>
+    <string name="pref_summary_enable_dark">Enable this to use contrasting font colors for a light colored status bar</string>
+
+    <string name="pref_key_dark_font_color">dark_font_color</string>
+    <string name="pref_title_dark_font_color">Contrasting font color</string>
+
+    <string name="pref_key_upper_limit_dark_font_color">upper_limit_dark_font_color</string>
+    <string name="pref_title_upper_limit_dark_font_color">Contrasting font color for upper threshold</string>
+
+    <string name="pref_key_lower_limit_dark_font_color">lower_limit_dark_font_color</string>
+    <string name="pref_title_lower_limit_dark_font_color">Contrasting font color for lower threshold</string>
+
+    <string name="pref_key_divisor">divisor</string>
+    <string name="pref_default_divisor">1.0</string>
+    <string name="pref_title_divisor">Divisor</string>
+    <string name="pref_summary_divisor">The temperature will be divided by this number</string>
+    <string name="pref_dialog_title_divisor">Default: 1.0</string>
+
+    <string name="pref_key_use_fahrenheit">use_fahrenheit</string>
+    <string name="pref_title_use_fahrenheit">Temperature in Fahrenheit</string>
+    <string name="pref_summary_use_fahrenheit">Converts the temperature from Celsius to Fahrenheit</string>
+
+    <string name="pref_key_use_root">use_root</string>
+    <string name="pref_title_use_root">Use root to read temperature file</string>
+    <string name="pref_summary_use_root">Enable this if you have problems with permissions</string>
+
+</resources>
