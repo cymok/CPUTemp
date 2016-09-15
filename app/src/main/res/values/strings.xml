@@ -11,7 +11,7 @@
     <!-- Dialogs -->
     <string name="dialog_about_label_header">About CPUTemp</string>
 
-    <string name="dialog_about_label_version">CPUTemp v1.6.2 © 2016 narcotek</string>
+    <string name="dialog_about_label_version">CPUTemp v1.6.3 © 2016 narcotek</string>
 
     <string name="dialog_about_label_source">Source code</string>
     <string name="dialog_about_link_source">https://gitlab.com/narcotek/CPUTemp/</string>

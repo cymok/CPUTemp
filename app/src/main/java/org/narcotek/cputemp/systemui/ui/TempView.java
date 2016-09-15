@@ -234,15 +234,11 @@ final class TempView extends TextView {
     public void updateTemp(double temp) {
         currentTemp = temp;
 
-        XposedLog.log(TAG, "Read temperature: " + currentTemp);
-
         // Calculation
         currentTemp /= divisor;
         if (useFahrenheit) {
             currentTemp = currentTemp * 1.8 + 32.0;
         }
-
-        XposedLog.log(TAG, "Calculated temperature: " + currentTemp);
 
         // Setting text
         TempView.this.setText(formatString.replaceFirst("%\\d*T",
