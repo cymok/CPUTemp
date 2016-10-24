@@ -23,7 +23,7 @@ public final class RootShell {
      * @throws RootNotGrantedException If root access was not granted
      */
     public RootShell() throws IOException, RootNotGrantedException {
-        process = Runtime.getRuntime().exec("su -c /system/bin/sh");
+        process = Runtime.getRuntime().exec("su -c sh");
 
         input = new BufferedReader(new InputStreamReader(process.getInputStream()));
         output = new BufferedWriter(new OutputStreamWriter(process.getOutputStream()));
