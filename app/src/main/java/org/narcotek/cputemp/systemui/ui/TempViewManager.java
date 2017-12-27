@@ -250,7 +250,7 @@ public final class TempViewManager {
         public void run() {
             try {
                 // Reading value from file
-                final double temp = tempReader.readTemperature(tempView.getTempFile());
+                final double temp = tempReader.readTemperature(tempView.getTempFile())/1000.0;//MIUI的CPU温度值是milli
 
                 tempView.post(new Runnable() {
 
