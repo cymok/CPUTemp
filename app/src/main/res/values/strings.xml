@@ -56,10 +56,10 @@
     <string name="pref_summary_temp_file">Path to the temperature file</string>
     <string name="pref_dialog_title_temp_file">Enter the file path</string>
 
-    <!--<string name="pref_key_update_interval">update_interval</string>-->
-    <string name="pref_key_update_interval">刷新间隔(毫秒)</string>
+    <string name="pref_key_update_interval">update_interval</string>
     <string name="pref_default_update_interval">1000</string>
-    <string name="pref_title_update_interval">Update interval</string>
+    <!--<string name="pref_title_update_interval">Update interval</string>-->
+    <string name="pref_title_update_interval">刷新间隔(毫秒)</string>
     <string name="pref_summary_update_interval">Update interval for reading the file in ms</string>
     <string name="pref_dialog_title_update_interval">Default: 1000</string>
 
